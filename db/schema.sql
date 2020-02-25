@@ -8,7 +8,5 @@ CREATE TABLE burgers
 	burger_name VARCHAR(255) NOT NULL,
 	burger_info VARCHAR(255),
 	devoured BOOLEAN DEFAULT false,
-	img_url VARCHAR(255),
-	num_of_likes SMALLINT,
 	PRIMARY KEY (id)
 );
