@@ -1,6 +1,6 @@
 # Project #13: Burger Logger
 
-An application that simulates Ordering an item and devouring it. Main pupose was for educational use on how to use handlebars.
+An application that simulates ordering an item and devouring it. Main pupose was for educational use on how to use handlebars.
 
 ## Table of Contents
 
