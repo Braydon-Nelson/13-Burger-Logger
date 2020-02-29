@@ -1,9 +1,9 @@
 var express = require('express')
-const app = express();
+var router = express.Router()
 var burger = require('../models/burger.js');
 
 //homepage route to render body of page
-app.get('/', function (req, res) {
+router.get('/', function (req, res) {
     burger.selectAll(function (data) {
         var handlebarObject = { burgers: data };
         console.log(handlebarObject);
@@ -14,21 +14,21 @@ app.get('/', function (req, res) {
 });
 
 //route for creating a burger
-app.post('/burger/create', function (req, res) {
+router.post('/burger/create', function (req, res) {
     burger.insertOne(req.body.burger_name, function () {
         res.redirect('/');
     });
 });
 
 //route for 'eating' a burger
-app.post('/burger/eat', function (req, res) {
+router.post('/burger/eat', function (req, res) {
     burger.updateOne(req.body.id, function () {
         res.redirect('/');
     });
 });
 
-//route for deleting a burger
-app.post('/burger/delete', function (req, res) {
+//route for deleting a bu
+router.post('/burger/delete', function (req, res) {
     burger.deleteOne(req.body.id, function () {
         res.redirect('/');
     });
