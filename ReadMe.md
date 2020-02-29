@@ -23,6 +23,7 @@ Clone the application to your local machine:
 ``
 git clone git@github.com:Braydon-Nelson/13-Burger-Logger.git
 ``
+
 Prepare the NPM Packages:
 
 ``
