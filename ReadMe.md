@@ -50,4 +50,4 @@ Start Managing
 
 ## Live Application
 
-Link to live application - https://limitless-gorge-19145.herokuapp.com/?burger_name=asdf
+Link to live application - https://limitless-gorge-19145.herokuapp.com/
